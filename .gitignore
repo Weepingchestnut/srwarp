@@ -85,3 +85,4 @@ pysrwarp/
 
 # Test codes
 test*.py
+.idea/

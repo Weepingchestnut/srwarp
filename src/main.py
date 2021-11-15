@@ -8,6 +8,7 @@ from misc import logger
 import torch
 import tqdm
 
+
 def main() -> None:
     cfg = get_config.parse()
     try:
@@ -33,6 +34,7 @@ def main() -> None:
         exit()
 
     return
+
 
 if __name__ == '__main__':
     main()

@@ -83,4 +83,4 @@ dependencies:
     - pyqt5-sip==12.8.1
     - pyscreenshot==3.0
     - pysrwarp==1.0.0
-prefix: /home/sanghyun/anaconda3/envs/srwarp
+prefix: /home/lzk/anaconda3/envs/srwarp

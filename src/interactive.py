@@ -44,6 +44,7 @@ def np2tensor(x: np.array) -> torch.Tensor:
 
     return x
 
+
 def tensor2np(x: torch.Tensor) -> np.array:
     with torch.no_grad():
         x = 127.5 * (x + 1)
@@ -258,7 +259,7 @@ class Interactive(QMainWindow):
                     self.cps[key] = (anchor[0], x_new)
 
         is_convex = True
-        #cross = None
+        # cross = None
         for i, pos in enumerate(self.line_order):
             y1, x1 = self.cps[pos]
             y2, x2 = self.cps[self.line_order[(i + 1) % 4]]
@@ -304,7 +305,7 @@ class Interactive(QMainWindow):
         qp = QPainter()
         qp.begin(self)
 
-        #if self.grab is None:
+        # if self.grab is None:
         if True:
             if self.inter == cv2.INTER_NEAREST:
                 inter_method = 'Nearest'
@@ -402,6 +403,7 @@ def main() -> None:
     sess = Interactive(app)
     sess.show()
     sys.exit(app.exec_())
+
 
 if __name__ == '__main__':
     try:
